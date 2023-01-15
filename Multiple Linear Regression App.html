@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!-- saved from url=(0121)https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/?_ga=2.2119280.1971229118.1673786807-268476227.1673492850 -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--<base href="_w_0d620c55/">--><base href=".">
+    <script type="text/javascript">
+(function() {
+  var workerId = '_w_0d620c55';
+  // remove base href if worker ID is in url
+  if (window.location.href.indexOf(workerId) > 0) {
+    document.querySelector('base').removeAttribute('href');
+  }
+})();
+</script>
+
+      <script type="text/javascript">
+      var __connect = {
+        shinyPre101: false
+      }
+      </script>
+      
+  
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.6.0];shiny-css[1.7.4];shiny-javascript[1.7.4];bootstrap[3.4.1]</script>
+<script src="./Multiple Linear Regression App_files/jquery.min.js.download"></script>
+<link href="./Multiple Linear Regression App_files/shiny.min.css" rel="stylesheet">
+<script src="./Multiple Linear Regression App_files/shiny.min.js.download"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./Multiple Linear Regression App_files/bootstrap.min.css" rel="stylesheet">
+<link href="./Multiple Linear Regression App_files/bootstrap-accessibility.min.css" rel="stylesheet">
+<script src="./Multiple Linear Regression App_files/bootstrap.min.js.download"></script>
+<script src="./Multiple Linear Regression App_files/bootstrap-accessibility.min.js.download"></script>  <link rel="stylesheet" type="text/css" href="./Multiple Linear Regression App_files/darkly.min.css">
+  <title>Multiple Linear Regression App</title>
+<script src="./Multiple Linear Regression App_files/sockjs.min.js.download"></script>
+<script src="./Multiple Linear Regression App_files/shiny-server-client.min.js.download"></script>
+<script>preShinyInit({reconnect:true,reconnectTimeout:15000,disableProtocols:["htmlfile","xdr-streaming","xdr-polling","websocket"],token:true,workerId:true,subappTag:true,extendSession:true,fixupInternalLinks:true});</script>
+<link rel="stylesheet" type="text/css" href="./Multiple Linear Regression App_files/rstudio-connect.css">
+<link rel="stylesheet" type="text/css" href="./Multiple Linear Regression App_files/shinyapps.css"></head>
+<body class="">
+<script type="text/javascript" src="./Multiple Linear Regression App_files/iframeResizer.contentWindow.min.js.download"></script>
+<script type="text/javascript" src="./Multiple Linear Regression App_files/shinyapps.frame.content.js.download"></script>
+<script type="text/javascript" src="./Multiple Linear Regression App_files/shinyapps.js.download"></script>
+  <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <span class="navbar-brand">Multiple Linear Regression App</span>
+        </div>
+        <ul class="nav navbar-nav" data-tabsetid="8906">
+          <li class="dropdown">
+            <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#" class="dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" data-value="Concept" aria-haspopup="true" aria-expanded="false">
+              Concept
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" data-tabsetid="8761" role="menu">
+              <li class="" role="presentation">
+                <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-8761-1" data-toggle="tab" data-bs-toggle="tab" data-value="Multiple Linear Regression" role="menuitem" tabindex="-1" aria-selected="false" aria-expanded="false">Multiple Linear Regression</a>
+              </li>
+              <li role="presentation">
+                <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-8761-2" data-toggle="tab" data-bs-toggle="tab" data-value="Classical Assumption Test" role="menuitem" tabindex="-1" aria-selected="false" aria-expanded="false">Classical Assumption Test</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active">
+            <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-8906-2" data-toggle="tab" data-bs-toggle="tab" data-value="Descriptive Statistics &amp; Datasets " aria-expanded="true" tabindex="0" aria-selected="true">Descriptive Statistics &amp; Datasets </a>
+          </li>
+          <li>
+            <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-8906-3" data-toggle="tab" data-bs-toggle="tab" data-value="Multiple Linear Regression  &amp; Classical Assumption Testing">Multiple Linear Regression  &amp; Classical Assumption Testing</a>
+          </li>
+          <li>
+            <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-8906-4" data-toggle="tab" data-bs-toggle="tab" data-value="Notes">Notes</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="tab-content" data-tabsetid="8906">
+        <div class="tab-pane" data-value="Multiple Linear Regression" id="tab-8761-1" aria-hidden="true" tabindex="-1"><p><strong>What is Multiple Linear Regression?</strong></p>
+<p>Multiple regression is a statistical method that aims to predict a
+dependent variable using multiple independent variables. It is generally
+used to find the relationship between several independent variables and
+a dependent variable.</p>
+<p>The formula for Multiple regression model is:</p>
+<p>Y = β0 + β1 X2 + β2 X2 +… + βn Xn + e</p>
+<p>Where,</p>
+<p>Y: Dependent variable or response</p>
+<p>X: Independent variable or predictor</p>
+<p>α: Constant</p>
+<p>β: Coefficient Estimate</p>
+<p><strong>What Is The Advantage Of The Multiple Regression?</strong></p>
+<p>The advantage of multiple regression with this technique is that it
+gives an opportunity for the individual to study the pattern of these
+factors and finally able to understand and study the influence of each
+and every variable which incorporates the yield</p>
+<p>The F test is to see whether the independent variables together
+(simultaneously) have a significant effect on the dependent variable.</p>
+<p>Hypothesis :</p>
+<p>H0 = there is no simultaneous influence from variable (X) to the
+dependent variable (Y)</p>
+<p>H1 = there is a simultaneous influence of the independent variable (X)
+on the dependent variable (Y)</p>
+<p>Acceptance Criteria :</p>
+<p>accept H0 if the value of Fcount ≤F table</p>
+<p>reject H0 if the value of Fcount&gt; Ftable</p>
+<p>The t-test is used to determine the effect of each independent variable
+on the dependent variable</p>
+<p>Hypothesis :</p>
+<p>H0 = there is no partial influence of the independent variable (X) on
+the dependent variable (Y)</p>
+<p>H1 = there is a partial effect of the independent variable (X) on the
+dependent variable (Y)</p>
+<p>Hypothesis Acceptance Criteria :</p>
+<p>accept H0 if tcount ≤ ttable</p>
+<p>reject H0 if tcount&gt; ttable</p>
+</div>
+        <div class="tab-pane" data-value="Classical Assumption Test" id="tab-8761-2"><p><strong>Classical Asumption Test</strong></p>
+<p><strong>1. Multicollinearity test:</strong> is used to determine existence of high
+correlation between variables in a multiple regression model. If there
+is a high correlation between the independent variables, then relation
+between them of the dependent variable will be disrupted.</p>
+<p>Hypothesis :</p>
+<p>H0 : There is no multicolinearity</p>
+<p>H1 : There is multicolinearity</p>
+<p>Acceptance Criteria :</p>
+<p>if VIF &lt;10, then not multicollinearity. Conversely, if the value of
+VIF&gt; 10 there is multicollinearity</p>
+<p><strong>2. Autocorrelation test</strong>: is used to see that there is a linear
+relation between the errors on a series of observations, sorted by time
+(time series).</p>
+<p>Hypothesis :</p>
+<p>H0 : There is no autocorellation</p>
+<p>H1 : There is autocorellation</p>
+<p>Acceptance Criteria :</p>
+<p>if the DW’s value of calculated is outside the lower limit (dL) and the
+upper limit (dV), then the model is not autocorrelation</p>
+<p><strong>3. Heteroscedasticity test</strong>: is used to test there is a regression
+model residual variance inequality from one observation to another
+observation.</p>
+<p>Hypothesis :</p>
+<p>H0 : There is no heteroscedasticity</p>
+<p>H1 : There is heteroscedasticity</p>
+<p>Acceptance Criteria :</p>
+<p>The result value of test can be seen from value of significant. If the
+significance value &gt; 0.05, then there is no heteroscedasticity.
+Conversely, if the significance value &lt; 0.05 , then occurs
+heteroscedaticity (Hill , Griffiths and Lim, 2011).</p>
+<p>4. <strong>Normality test:</strong> is used to determine whether or not the normal
+distribution of data (Santoso, 2010)</p>
+<p>Hypothesis :</p>
+<p>H0 : The data comes from population that are normally distributed</p>
+<p>H1 : The data comes from population that are not normally distributed</p>
+<p>Acceptance Criteria :</p>
+<p>Significance test of the value of T3 with Shapiro Wilk table can be seen
+in the probability value (p). If the value of p&gt; 5%, then the data
+are normally distributed. Conversely, when the value of p &lt; 5% , then
+the data were not normally distributed</p>
+</div>
+        <div class="tab-pane active" data-value="Descriptive Statistics &amp; Datasets " id="tab-8906-2" aria-hidden="false" tabindex="0">
+          <div class="row">
+            <div class="col-sm-4">
+              <form class="well" role="complementary">
+                <h2>Datasets</h2>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="file-label" for="file">Choose File</label>
+                  <div class="input-group">
+                    <label class="input-group-btn input-group-prepend">
+                      <span class="btn btn-default btn-file">
+                        Browse...
+                        <input id="file" name="file" type="file" style="position: absolute !important; top: -99999px !important; left: -99999px !important;" accept="text/csv,text/comma-separated-value,text/plain,.csv" class="shiny-bound-input">
+                      </span>
+                    </label>
+                    <input type="text" class="form-control" placeholder="No file selected" readonly="readonly" fdprocessedid="ip82vw">
+                  </div>
+                  <div id="file_progress" class="progress active shiny-file-input-progress">
+                    <div class="progress-bar"></div>
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group shiny-input-container">
+                  <div class="checkbox">
+                    <label>
+                      <input id="header" type="checkbox" checked="checked" class="shiny-bound-input">
+                      <span>Header</span>
+                    </label>
+                  </div>
+                </div>
+                <div id="disp" class="form-group shiny-input-radiogroup shiny-input-container shiny-bound-input" role="radiogroup" aria-labelledby="disp-label">
+                  <label class="control-label" id="disp-label" for="disp">Display</label>
+                  <div class="shiny-options-group">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="disp" value="head" checked="checked">
+                        <span>Head</span>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="disp" value="all">
+                        <span>All</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div id="sep" class="form-group shiny-input-radiogroup shiny-input-container shiny-bound-input" role="radiogroup" aria-labelledby="sep-label">
+                  <label class="control-label" id="sep-label" for="sep">Separators</label>
+                  <div class="shiny-options-group">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="sep" value="," checked="checked">
+                        <span>Comma</span>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="sep" value=";">
+                        <span>Semicolon</span>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="sep" value="	">
+                        <span>Tab</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-8" role="main">
+              <div id="contents" class="shiny-html-output shiny-bound-output" aria-live="polite"></div>
+            </div>
+          </div>
+          <h2>Descriptive Statistics</h2>
+          <pre class="shiny-text-output noplaceholder shiny-bound-output" id="sum" aria-live="polite"></pre>
+        </div>
+        <div class="tab-pane" data-value="Multiple Linear Regression  &amp; Classical Assumption Testing" id="tab-8906-3">
+          <div class="row">
+            <div class="col-sm-4">
+              <form class="well" role="complementary">
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="Y-label" for="Y">Input dependent varibale's name (Y)</label>
+                  <input id="Y" type="text" class="form-control shiny-bound-input" value="">
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="X1-label" for="X1">Input independent varibale's name (X1)</label>
+                  <input id="X1" type="text" class="form-control shiny-bound-input" value="">
+                </div>
+                <div class="form-group shiny-input-container">
+                  <label class="control-label" id="X2-label" for="X2">Input independent varibale's name (X2)</label>
+                  <input id="X2" type="text" class="form-control shiny-bound-input" value="">
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-8" role="main">
+              <div class="tabbable">
+                <ul class="nav nav-tabs" data-tabsetid="6003" role="tablist">
+                  <li class="active" role="presentation">
+                    <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-6003-1" data-toggle="tab" data-bs-toggle="tab" data-value="Matrix Correlation" role="tab" id="ui-tab-739" tabindex="0" aria-selected="true" aria-controls="tab-6003-1">Matrix Correlation</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-6003-2" data-toggle="tab" data-bs-toggle="tab" data-value="Regression" role="tab" id="ui-tab-33" tabindex="-1" aria-selected="false" aria-controls="tab-6003-2">Regression</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-6003-3" data-toggle="tab" data-bs-toggle="tab" data-value="Normality Test" role="tab" id="ui-tab-912" tabindex="-1" aria-selected="false" aria-controls="tab-6003-3">Normality Test</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-6003-4" data-toggle="tab" data-bs-toggle="tab" data-value="Multicolinearity Test " role="tab" id="ui-tab-288" tabindex="-1" aria-selected="false" aria-controls="tab-6003-4">Multicolinearity Test </a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-6003-5" data-toggle="tab" data-bs-toggle="tab" data-value="Autocorrelation Test" role="tab" id="ui-tab-946" tabindex="-1" aria-selected="false" aria-controls="tab-6003-5">Autocorrelation Test</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-6003-6" data-toggle="tab" data-bs-toggle="tab" data-value="Heteroscedasticity Test" role="tab" id="ui-tab-188" tabindex="-1" aria-selected="false" aria-controls="tab-6003-6">Heteroscedasticity Test</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="https://hanani-mustaghfiroh.shinyapps.io/MultipleRegressionAPPS/_w_0d620c55/#tab-6003-7" data-toggle="tab" data-bs-toggle="tab" data-value="Histogram Distribution" role="tab" id="ui-tab-577" tabindex="-1" aria-selected="false" aria-controls="tab-6003-7">Histogram Distribution</a>
+                  </li>
+                </ul>
+                <div class="tab-content" data-tabsetid="6003">
+                  <div class="tab-pane active" data-value="Matrix Correlation" id="tab-6003-1" role="tabpanel" tabindex="0" aria-hidden="false" aria-labelledby="ui-tab-739">
+                    <h2>Korelasi Matriks</h2>
+                    <div class="shiny-plot-output html-fill-item shiny-bound-output" id="matriks" style="width:100%;height:400px;" aria-live="polite"></div>
+                  </div>
+                  <div class="tab-pane" data-value="Regression" id="tab-6003-2" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-33">
+                    <pre class="shiny-text-output noplaceholder shiny-bound-output" id="summary" aria-live="polite"></pre>
+                  </div>
+                  <div class="tab-pane" data-value="Normality Test" id="tab-6003-3" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-912">
+                    <pre class="shiny-text-output noplaceholder shiny-bound-output" id="norm" aria-live="polite"></pre>
+                  </div>
+                  <div class="tab-pane" data-value="Multicolinearity Test " id="tab-6003-4" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-288">
+                    <pre class="shiny-text-output noplaceholder shiny-bound-output" id="linear" aria-live="polite"></pre>
+                  </div>
+                  <div class="tab-pane" data-value="Autocorrelation Test" id="tab-6003-5" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-946">
+                    <pre class="shiny-text-output noplaceholder shiny-bound-output" id="korelasi" aria-live="polite"></pre>
+                  </div>
+                  <div class="tab-pane" data-value="Heteroscedasticity Test" id="tab-6003-6" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-188">
+                    <pre class="shiny-text-output noplaceholder shiny-bound-output" id="hete" aria-live="polite"></pre>
+                  </div>
+                  <div class="tab-pane" data-value="Histogram Distribution" id="tab-6003-7" role="tabpanel" tabindex="-1" aria-hidden="true" aria-labelledby="ui-tab-577">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="shiny-plot-output html-fill-item shiny-bound-output" id="distribution1" style="width:100%;height:400px;" aria-live="polite"></div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="shiny-plot-output html-fill-item shiny-bound-output" id="distribution2" style="width:100%;height:400px;" aria-live="polite"></div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="shiny-plot-output html-fill-item shiny-bound-output" id="distribution3" style="width:100%;height:400px;" aria-live="polite"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-value="Notes" id="tab-8906-4">
+          <h2>Dibuat oleh Hanani Mustaghfiroh</h2>
+          <h2>Nama kelompok : Hanani Mustaghfiroh, Anissa Wahyu Novita, Iswara H </h2>
+          <h2>Tugas Mata Kuliah : Workshop Komputer dan Statistika</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="ss-connect-dialog" style="display: none;"><label>Attempting to reconnect...</label><label>&nbsp;</label></div><div id="ss-overlay" class="ss-gray-out" style="display: none;"></div></body></html>
